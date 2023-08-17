@@ -1,7 +1,11 @@
 import Products from "@/components/products";
 
 const index = () => {
-  return <Products />;
+  return (
+    <div className="mx-auto container">
+      <Products />
+    </div>
+  );
 };
 
 export default index;

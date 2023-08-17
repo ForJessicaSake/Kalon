@@ -1,3 +1,4 @@
+import FeaturedCard from "@/components/micro/card/featuredCard";
 import Image from "next/image";
 import React from "react";
 
@@ -23,6 +24,9 @@ const Featured = () => {
             Add a touch of elegance to your everyday look with our Crochet Lace
             Top! Handmade by skilled artisans using soft, high-quality yarn.
           </p>
+        </div>
+        <div>
+          <FeaturedCard/>
         </div>
       </div>
     </main>

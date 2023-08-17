@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
         </section>
       </form>
-      <p className="pt-10 text-sm">
+      <p className="py-10 text-sm">
         <span className="font-bold text-primary">Note:</span> You will usually
         receive a responds within 1 – 2 days. If you don’t see a respond in 1 –
         2 days, please check your spam folder as sometimes the email goes into
