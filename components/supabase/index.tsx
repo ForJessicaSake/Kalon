@@ -8,6 +8,9 @@ if (!supabaseUrl || !supabaseKey) {
     "NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_KEY is not defined in the environment."
   );
 }
+
+console.log('Supabase URL:', supabaseUrl);
+console.log('Supabase Key:', supabaseKey);
 const Supabase = createClient(supabaseUrl, supabaseKey)
 
 export default Supabase;

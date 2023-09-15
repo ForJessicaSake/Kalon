@@ -1,7 +1,5 @@
-import Supabase from "@/components/supabase";
-import Image from "next/image";
+import Supabase from "@/components/Supabase";
 import React from "react";
-import Button from "../button/Button";
 
 const FeaturedCard = () => {
   const [products, setProducts] = React.useState<null | any>(null);
@@ -12,7 +10,6 @@ const FeaturedCard = () => {
         console.log(error, "err");
       }
       setProducts(data?.splice(3, 4));
-      console.log(data, "d");
     };
     fetchProducts();
   });
