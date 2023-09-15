@@ -1,7 +1,7 @@
 import Supabase from "@/components/Supabase";
 import React from "react";
 
-const FeaturedCard = () => {
+ function FeaturedCard () {
   const [products, setProducts] = React.useState<null | any>(null);
   React.useEffect(() => {
     const fetchProducts = async () => {
