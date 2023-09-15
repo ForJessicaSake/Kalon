@@ -1,4 +1,4 @@
-import FeaturedCard from "@/components/micro/card/featuredCard";
+import FeaturedCard from "@/components/micro/card/FeaturedCard";
 import Image from "next/image";
 import React from "react";
 
