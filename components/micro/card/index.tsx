@@ -11,8 +11,9 @@ const Card = () => {
       const { data, error } = await Supabase.from("crotchet").select();
       if (error) {
         console.log(error, "err");
+      } else {
+        setProducts(data);
       }
-      setProducts(data);
     };
     fetchProducts();
   });
@@ -21,7 +22,10 @@ const Card = () => {
     <div className="grid grid-cols-3 items-center place-items-center gap-10">
       {products &&
         products?.map((product: { [key: string]: string }) => (
-          <div className="p-5 font-medium flex flex-col items-center" key={product?.id}>
+          <div
+            className="p-5 font-medium flex flex-col items-center"
+            key={product?.id}
+          >
             <div>
               <img src={product?.image} alt="dress" className="w-64 h-64" />
             </div>
