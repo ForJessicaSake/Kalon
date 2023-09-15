@@ -16,14 +16,14 @@ const FeaturedCard = () => {
   return (
     <div className="sm:grid flex justify-between overflow-scroll lg:overflow-hidden sm:grid-cols-2 xl:grid-cols-4 items-center place-items-center gap-x-10">
       {products &&
-        products.map((product: { [key: string]: string }) => (
+        products?.map((product: { [key: string]: string }) => (
           <div
             className="p-5 font-medium flex flex-col items-center"
-            key={product.id}
+            key={product?.id}
           >
             <div className="xl:w-[280px] w[280px] lg:w-[420px] md:w-[340px] h-[513px] overflow-hidden">
               <img
-                src={product.image}
+                src={product?.image}
                 alt="dress"
                 className="object-cover w-full h-full"
               />
