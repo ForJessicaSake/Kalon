@@ -1,6 +1,5 @@
-import Supabase from "../../Supabase/index";
-import Image from "next/image";
 import React from "react";
+import Supabase from "../../Supabase/index";
 import Button from "../button/Button";
 
 const Card = () => {
