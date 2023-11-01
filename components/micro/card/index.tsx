@@ -1,4 +1,4 @@
-import Supabase from "@/components/Supabase";
+import Supabase from "../../Supabase/index";
 import Image from "next/image";
 import React from "react";
 import Button from "../button/Button";
