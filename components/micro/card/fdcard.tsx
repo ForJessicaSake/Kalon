@@ -1,5 +1,5 @@
 import React from "react";
-import Supabase from "../../Supabase/index";
+import Supabase from "@/components/Supabase";
 
  function FeaturedCard () {
   const [products, setProducts] = React.useState<null | any>(null);
